@@ -17,12 +17,10 @@ def engineer_features(df):
 
 def split_data(df):
     train, test = train_test_split(df, test_size=0.2)
-    return (train, test)
+    train.to_csv(TRAIN_DATA_FN, index=False)
+    test.to_csv(TEST_DATA_FN, index=False)
 
 
 if __name__ == '__main__':
     df = load_data()
-    df = engineer_features(df)
-    train, test = split_data(df)
-    train.to_csv(TRAIN_DATA_FN, index=False)
-    test.to_csv(TEST_DATA_FN, index=False)
+    #split_data(df)
