@@ -1,0 +1,8 @@
+Random Forest
+Validation Accuracy: 0.8652
+
+XGBoost
+Validation Accuracy: 0.8727
+
+XGBoost (tuned)
+Validation Accuracy: 0.8975
