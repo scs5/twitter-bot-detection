@@ -17,10 +17,7 @@ CURATED_DATA_FN = './data/curated_data.csv'
 def engineer_features(df):
     """
     Features to implement:
-        - Consider other features when POS tagging
-        - Number of words in description
-        - Sentiment of description
-        - Emoticons in description
+        - Consider other languages when POS tagging
     """
     # Handle NaN values
     mode = df['description'].mode().values[0]
